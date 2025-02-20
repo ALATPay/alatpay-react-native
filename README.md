@@ -10,15 +10,25 @@ npm install react-native-alatpay
 
 ## Usage
 
-
 ```js
-import { multiply } from 'react-native-alatpay';
+import { ALATPay, type ALATPayRef, type Currency } from 'react-native-alatpay';
 
 // ...
 
-const result = await multiply(3, 7);
+<ALATPay
+        ref={alatpayRef}
+        customerEmail="johndoe@mail.com"
+        customerFirstName="John"
+        customerLastName="Doe"
+        amount={1000}
+        currency={Currency.NGN}
+        businessId={"your-business-id"}
+        apiKey={"your-api-key"}
+        onTransaction={(data) => console.log(data)}
+        onClose={(data) => console.log(data)}
+        autoStart={false}
+      />
 ```
-
 
 ## Contributing
 
