@@ -1,7 +1,7 @@
 {
   "name": "react-native-alatpay",
   "version": "0.1.0",
-  "description": "ALATPay makes payments a breeze for merchants. Easily integrate into your React Native app for seamless transactions on both Android and iOS",
+  "description": "Seamlessly integrate ALATPay into your React Native apps with this SDK. Easily accept payments and manage transactions.",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
   "module": "./lib/module/index.js",
@@ -46,20 +46,22 @@
     "release": "release-it"
   },
   "keywords": [
-    "react-native",
-    "ios",
-    "android"
+    "react-native-payment",
+    "alatpay",
+    "alat",
+    "payment",
+    "alatpay-react-native"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Afeezagbaje/alatpay-react-native.git"
+    "url": "git+https://github.com/ALATPay/alatpay-react-native.git"
   },
   "author": "Afeez Agbaje <afeezagbaje@gmail.com> (https://github.com/Afeezagbaje)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Afeezagbaje/alatpay-react-native/issues"
+    "url": "https://github.com/ALATPay/alatpay-react-native/issues"
   },
-  "homepage": "https://github.com/Afeezagbaje/alatpay-react-native#readme",
+  "homepage": "https://github.com/ALATPay/alatpay-react-native#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -88,7 +90,8 @@
   },
   "peerDependencies": {
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "react-native-webview": "^13.13.2"
   },
   "workspaces": [
     "example"
@@ -183,5 +186,8 @@
     "languages": "js",
     "type": "library",
     "version": "0.48.2"
+  },
+  "dependencies": {
+    "react-native-webview": "^13.13.2"
   }
 }
